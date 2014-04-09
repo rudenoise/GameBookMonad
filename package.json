@@ -1,0 +1,8 @@
+{
+    "name": "gameBookMonad",
+    "description": "A Monadic Game Book Reader",
+    "devDependencies": {
+        "grunt-jslint": "1.1.4",
+        "grunt-contrib-watch": "0.3.1"
+    }
+}
