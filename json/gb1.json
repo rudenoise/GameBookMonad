@@ -1,0 +1,27 @@
+[
+    {
+        "title": "A first Game Book written in JSON",
+        "body": "By Joel Hughes\nhttp://rudenoise.github.com",
+        "choices": [1]
+    },
+    {
+        "title": "Wake up.",
+        "body": "You wake up in your bed.",
+        "choices": [2, 3]
+    },
+    {
+        "title": "Jump out of the window.",
+        "body": "Today seems very dull, you throw yourself from the window. After blacking out, you become aware that you're in bed.",
+        "choices": [4, 1]
+    },
+    {
+        "title": "Brush teeth.",
+        "body": "You get up and go to the bathroom. Having brushed your teeth, you feel very sleepy.",
+        "choices": [1]
+    },
+    {
+        "title": "Keep eyes closed.",
+        "body": "This isn't your bed, is it? Something doesn't feel quite right.",
+        "choices": []
+    }
+]
