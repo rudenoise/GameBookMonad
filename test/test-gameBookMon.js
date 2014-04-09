@@ -1,5 +1,5 @@
 var gbm = require('../gameBookMonad.js').gameBookMonad,
-    story = require('../../json/gb1.json');
+    story = require('../json/gb1.json');
 
 exports.coreLoop = function (test) {
     'use strict';

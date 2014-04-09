@@ -3,6 +3,7 @@ module.exports = function (grunt) {
     // load npm tasks
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
     // config
     grunt.initConfig({
         jslint: {
@@ -22,23 +23,28 @@ module.exports = function (grunt) {
                 }
             }
         },
+        nodeunit: {
+            all: ['test/*.js']
+        },
         watch: {
             js: {
                 files: [
                     '*.js',
                     'test/*.js'
                 ],
-                tasks: 'jslint'
+                tasks: ['jslint', 'nodeunit']
             }
         }
     });
 
     grunt.registerTask('watch_js', [
         'jslint',
+        'nodeunit',
         'watch:js'
     ]);
     grunt.registerTask('default', [
         'jslint',
+        'nodeunit',
         'watch'
     ]);
 };
